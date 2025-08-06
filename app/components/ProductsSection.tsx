@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function ProductsSection() {
   const products = [
     {
@@ -7,7 +9,8 @@ export default function ProductsSection() {
       notes: "Floral, Citrus, Bright Acidity",
       description: "A bright and vibrant coffee with complex floral notes and citrus undertones from high-altitude Ethiopian farms.",
       price: "$18.99",
-      weight: "12oz"
+      weight: "12oz",
+      image: "/light-roast.png"
     },
     {
       id: 2,
@@ -16,7 +19,8 @@ export default function ProductsSection() {
       notes: "Chocolate, Caramel, Balanced",
       description: "Rich and smooth with chocolate and caramel notes, perfectly balanced for any time of day.",
       price: "$16.99",
-      weight: "12oz"
+      weight: "12oz",
+      image: "/medium-roast.png"
     },
     {
       id: 3,
@@ -25,7 +29,8 @@ export default function ProductsSection() {
       notes: "Smoky, Spicy, Full Body",
       description: "A full-bodied coffee with smoky undertones and spicy complexity from volcanic soil.",
       price: "$19.99",
-      weight: "12oz"
+      weight: "12oz",
+      image: "/dark-roast.png"
     },
     {
       id: 4,
@@ -34,7 +39,8 @@ export default function ProductsSection() {
       notes: "Nutty, Low Acid, Rich",
       description: "A smooth, low-acid coffee with nutty flavors and rich body, perfect for espresso.",
       price: "$15.99",
-      weight: "12oz"
+      weight: "12oz",
+      image: "/dark-roast.png"
     },
     {
       id: 5,
@@ -43,7 +49,8 @@ export default function ProductsSection() {
       notes: "Balanced, Smooth, Versatile",
       description: "Our signature blend combining beans from multiple origins for the perfect daily coffee.",
       price: "$17.99",
-      weight: "12oz"
+      weight: "12oz",
+      image: "/medium-roast.png"
     },
     {
       id: 6,
@@ -52,7 +59,8 @@ export default function ProductsSection() {
       notes: "Sweet, Clean, Caffeine-Free",
       description: "All the flavor without the caffeine, using the Swiss Water Process for natural decaffeination.",
       price: "$18.99",
-      weight: "12oz"
+      weight: "12oz",
+      image: "/medium-roast.png"
     }
   ];
 
@@ -82,13 +90,13 @@ export default function ProductsSection() {
           {products.map((product) => (
             <div key={product.id} className="card p-6 hover:shadow-lg transition-shadow duration-300">
               {/* Product Image Placeholder */}
-              <div className="aspect-square bg-gradient-to-br from-kraft to-secondary/20 rounded-lg mb-6 flex items-center justify-center">
-                <div className="text-center text-dark-brown">
-                  <svg className="w-16 h-16 mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M18.5 3H5.5C4.67 3 4 3.67 4 4.5v15c0 .83.67 1.5 1.5 1.5h13c.83 0 1.5-.67 1.5-1.5v-15c0-.83-.67-1.5-1.5-1.5zM18 19H6V5h12v14zm-6-7c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/>
-                  </svg>
-                  <p className="text-sm font-medium">Coffee Beans</p>
-                </div>
+              <div 
+                className="aspect-square rounded-lg mb-6 flex items-center justify-center bg-cover bg-center bg-gray-200"
+                style={{
+                  backgroundImage: `url(${product.image})`,
+                }}
+              >
+                
               </div>
 
               {/* Product Info */}

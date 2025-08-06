@@ -42,7 +42,7 @@ export default function Navigation() {
                 <a
                   key={item.href}
                   href={item.href}
-                  className="text-dark-brown hover:text-primary transition-colors duration-200 font-medium"
+                  className={`text-dark-brown hover:text-primary transition-colors duration-200 font-medium ${!isScrolled ? 'text-orange-200' : 'text-dark-brown'}`}
                 >
                   {item.label}
                 </a>

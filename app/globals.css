@@ -39,9 +39,15 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
-/* Smooth scrolling */
+/* Smooth scrolling and overscroll prevention */
 html {
   scroll-behavior: smooth;
+  overscroll-behavior: none;
+}
+
+body {
+  overscroll-behavior: none;
+  overscroll-behavior-y: none;
 }
 
 /* Custom component classes */

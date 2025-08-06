@@ -1,6 +1,17 @@
 export default function HeroSection() {
   return (
-    <section id="why" className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-kraft/30 to-light-brown/50">
+    <section id="why" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      {/* Background Image with Opacity */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-90"
+        style={{
+          backgroundImage: `url(/hero-bg.png)`,
+        }}
+      />
+      
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-kraft/60 via-dark-brown/60 to-primary/60" />
+      
       <div className="container-max section-padding text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           {/* Main Heading */}
@@ -10,7 +21,7 @@ export default function HeroSection() {
           </h1>
           
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-accent mb-8 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-300/80 mb-8 max-w-2xl mx-auto">
             Discover artisanal coffee beans sourced from the world&apos;s finest growing regions, 
             roasted with passion and precision to unlock extraordinary flavors.
           </p>
@@ -23,8 +34,8 @@ export default function HeroSection() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="font-serif text-xl font-bold text-dark-brown mb-2">Small Batch Roasting</h3>
-              <p className="text-accent">Carefully roasted in small batches to ensure optimal flavor development</p>
+              <h3 className="font-serif text-xl font-bold text-orange-300 mb-2">Small Batch Roasting</h3>
+              <p className="text-gray-100">Carefully roasted in small batches to ensure optimal flavor development</p>
             </div>
             
             <div className="text-center">
@@ -33,8 +44,8 @@ export default function HeroSection() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" />
                 </svg>
               </div>
-              <h3 className="font-serif text-xl font-bold text-dark-brown mb-2">Premium Origins</h3>
-              <p className="text-accent">Sourced directly from renowned coffee growing regions worldwide</p>
+              <h3 className="font-serif text-xl font-bold text-orange-300 mb-2">Premium Origins</h3>
+              <p className="text-gray-100">Sourced directly from renowned coffee growing regions worldwide</p>
             </div>
             
             <div className="text-center">
@@ -43,8 +54,8 @@ export default function HeroSection() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
               </div>
-              <h3 className="font-serif text-xl font-bold text-dark-brown mb-2">Passionate Craft</h3>
-              <p className="text-accent">Every bean is treated with care and roasted with artisanal expertise</p>
+              <h3 className="font-serif text-xl font-bold text-orange-300 mb-2">Passionate Craft</h3>
+              <p className="text-gray-100">Every bean is treated with care and roasted with artisanal expertise</p>
             </div>
           </div>
 
@@ -55,7 +66,7 @@ export default function HeroSection() {
             </a>
             <a 
               href="#about" 
-              className="text-dark-brown hover:text-primary font-semibold text-lg transition-colors duration-200 flex items-center gap-2"
+              className="text-orange-200 hover:text-primary font-semibold text-lg transition-colors duration-200 flex items-center gap-2"
             >
               Learn Our Story
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

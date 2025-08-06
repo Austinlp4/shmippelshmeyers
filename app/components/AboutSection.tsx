@@ -45,25 +45,30 @@ export default function AboutSection() {
 
           {/* Image Placeholder */}
           <div className="relative">
-            <div className="aspect-square bg-gradient-to-br from-kraft to-light-brown rounded-2xl flex items-center justify-center">
-              <div className="text-center text-dark-brown">
-                <svg className="w-24 h-24 mx-auto mb-4" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M18.5 2h-13C4.67 2 4 2.67 4 3.5v17c0 .83.67 1.5 1.5 1.5h13c.83 0 1.5-.67 1.5-1.5v-17c0-.83-.67-1.5-1.5-1.5zM18 20H6V4h12v16zm-7-7.5c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5zm-4 0c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5z"/>
-                </svg>
-                <p className="font-medium">Roastery & Team Photo</p>
-                <p className="text-sm opacity-70">Coming Soon</p>
-              </div>
+            <div className="aspect-square bg-gradient-to-br from-kraft to-light-brown rounded-2xl flex items-center justify-center" style={{
+                backgroundImage: `url(/founder.png)`,
+                backgroundSize: '80%',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+              }}>
+              
             </div>
             
             {/* Decorative coffee beans */}
-            <div className="absolute -top-4 -right-4 w-8 h-8 bg-secondary rounded-full"></div>
-            <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-primary rounded-full"></div>
-            <div className="absolute top-1/2 -left-6 w-4 h-4 bg-accent rounded-full"></div>
+            <div className="absolute -top-4 -right-4 w-8 h-12 bg-secondary rounded-full transform rotate-12 flex items-center justify-center">
+              <div className="w-0.5 h-8 bg-white/30 rounded-full"></div>
+            </div>
+            <div className="absolute -bottom-4 -left-4 w-6 h-9 bg-primary rounded-full transform -rotate-45 flex items-center justify-center">
+              <div className="w-0.5 h-6 bg-white/30 rounded-full"></div>
+            </div>
+            <div className="absolute top-1/2 -left-6 w-4 h-6 bg-accent rounded-full transform rotate-30 flex items-center justify-center">
+              <div className="w-0.5 h-4 bg-white/30 rounded-full"></div>
+            </div>
           </div>
         </div>
 
         {/* Stats Section */}
-        <div className="mt-20 grid sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        {/* <div className="mt-20 grid sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
           <div className="space-y-2">
             <div className="text-4xl font-serif font-bold text-primary">5+</div>
             <div className="text-dark-brown font-medium">Years of Roasting</div>
@@ -80,7 +85,7 @@ export default function AboutSection() {
             <div className="text-4xl font-serif font-bold text-primary">1000+</div>
             <div className="text-dark-brown font-medium">Happy Customers</div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
