@@ -130,7 +130,7 @@ export default function ProductsSection() {
         {/* Bottom CTA */}
         <div className="text-center mt-16">
           <p className="text-lg text-accent mb-6">
-            Can't decide? We'd love to help you find your perfect coffee match.
+            Can&apos;t decide? We&apos;d love to help you find your perfect coffee match.
           </p>
           <a href="#contact" className="btn-primary text-lg px-8 py-4">
             Get Personalized Recommendations

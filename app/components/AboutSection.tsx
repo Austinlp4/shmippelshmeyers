@@ -14,7 +14,7 @@ export default function AboutSection() {
 
             <p className="text-lg text-accent leading-relaxed">
               Founded with a passion for exceptional coffee, Shmipple Shmeyers Beans began as a 
-              quest to bring the world's finest coffee experiences directly to your cup. What 
+              quest to bring the world&apos;s finest coffee experiences directly to your cup. What 
               started in a small roastery has grown into a dedication to sourcing, roasting, 
               and sharing extraordinary coffee beans.
             </p>

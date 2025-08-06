@@ -76,7 +76,7 @@ export default function ContactSection() {
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-xl text-light-brown max-w-2xl mx-auto">
-            Ready to experience exceptional coffee? We'd love to help you find your perfect blend 
+            Ready to experience exceptional coffee? We&apos;d love to help you find your perfect blend 
             or answer any questions about our roasting process.
           </p>
         </div>
@@ -157,7 +157,7 @@ export default function ContactSection() {
             <h4 className="font-serif text-xl font-bold mb-4">Ready to Order?</h4>
             <p className="text-light-brown mb-6">
               Contact us today to place your order or discuss custom roasting options. 
-              We're here to help you discover your perfect coffee experience.
+              We&apos;re here to help you discover your perfect coffee experience.
             </p>
             <a 
               href="mailto:hello@shmippleshmeyers.com"

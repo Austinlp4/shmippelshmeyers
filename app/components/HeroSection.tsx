@@ -11,7 +11,7 @@ export default function HeroSection() {
           
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-accent mb-8 max-w-2xl mx-auto">
-            Discover artisanal coffee beans sourced from the world's finest growing regions, 
+            Discover artisanal coffee beans sourced from the world&apos;s finest growing regions, 
             roasted with passion and precision to unlock extraordinary flavors.
           </p>
 
