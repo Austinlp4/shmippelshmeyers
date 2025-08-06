@@ -1,0 +1,63 @@
+# Cline Rules: Shmipple Shmeyers Beans Project
+
+## Project Intelligence & Patterns
+
+### Core Project Philosophy
+- **Simplicity First**: This is intentionally a simple, static marketing site
+- **Performance Critical**: 1-second FCP target on mobile 4G is non-negotiable
+- **No Over-Engineering**: Resist adding complexity - vanilla HTML/CSS/JS only
+- **Image Budget**: 300KB total is a hard constraint, not a suggestion
+
+### User Preferences & Workflow
+- **Modern Creative Layouts**: User prefers animations and dislikes boring section/card-based designs
+- **No src Directory**: When creating Next.js projects, user prefers app directory structure directly
+- **PostgreSQL Over Supabase**: User prefers PostgreSQL for database operations
+- **AdFury.ai Theme**: Project uses orange primary color (#FF6B35), Inter font, and specific component classes
+
+### Critical Implementation Paths
+- **Single Page Architecture**: Everything must work on single index.html with smooth-scroll navigation
+- **Anchor Navigation**: Use #why, #about, #products, #contact for section anchors
+- **Mobile-First**: Always start with mobile constraints and scale up
+- **WebP/AVIF**: All images must be optimized to these formats
+
+### Known Constraints & Challenges
+- **No Backend**: Absolutely no server-side functionality - static only
+- **No Forms**: Contact must be mailto: links only
+- **No CMS**: All content is hardcoded in HTML
+- **Timeline Pressure**: 5-day sprint timeline requires efficient decisions
+
+### Development Workflow
+- **Memory Bank First**: Always read memory bank files before starting any task
+- **Documentation Updates**: Update activeContext.md and progress.md after significant changes
+- **Performance Testing**: Use Lighthouse for ongoing performance validation
+- **Accessibility**: Basic WCAG AA compliance is required, not optional
+
+### Asset Management Patterns
+- **Image Organization**: Separate folders for hero/, products/, about/ images
+- **Optimization Workflow**: Convert to WebP/AVIF and track against 300KB budget
+- **Font Strategy**: Subset fonts to used characters only for performance
+
+### Code Organization Preferences
+- **Vanilla JavaScript**: No libraries or frameworks for interactions
+- **CSS Custom Properties**: Use for consistent theming and colors
+- **Semantic HTML**: Proper heading hierarchy and landmark elements
+- **Critical CSS**: Inline critical styles for above-fold content
+
+### Quality Gates
+- **Performance**: Must pass Lighthouse performance audit
+- **Accessibility**: Must pass basic keyboard navigation and screen reader tests
+- **Browser Testing**: Test on Chrome, Firefox, Safari, Edge
+- **Mobile Testing**: Verify on actual mobile devices, not just dev tools
+
+### Evolution Considerations
+- **Future E-commerce**: Architecture should allow for future shopping cart addition
+- **Content Updates**: Consider how client will update product information
+- **Analytics**: Plan for optional analytics integration
+
+## Memory Bank Maintenance
+- **Active Context**: Update after each major milestone
+- **Progress**: Update after completing any checklist items
+- **System Patterns**: Update if architectural decisions change
+- **Tech Context**: Update if dependencies or tools change
+
+This project prioritizes speed, simplicity, and performance above all else. When in doubt, choose the simpler solution that maintains performance goals.
